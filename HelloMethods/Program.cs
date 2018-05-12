@@ -9,7 +9,10 @@ namespace HelloMethods
     {
         public static void Main(string[] args)
         {
-            string message = Message.GetMessage("fr");
+            Console.WriteLine("Please enter choice:\nfr\nen\nsp\n");
+
+            string userInput = Console.ReadLine();
+            string message = Message.GetMessage(userInput);
             Console.WriteLine(message);
             Console.ReadLine();
         }
